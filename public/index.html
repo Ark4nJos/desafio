@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    <link rel="stylesheet" href="./styleIndex.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="header">
+            <h2>Lista de Usuários</h2>
+        </section>
+        <button type="button" class="criar" onclick="window.location.href='createUser.html'">Cadastrar novo
+            usuário</button>
+        <table id="user-table"></table>
+        <script src="./script.js"></script>
+    </div>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEditModal()">&times;</span>
+            <label for="editName">Nome:</label>
+            <input type="text" id="editName" name="editName" required>
+            <label for="editEmail">E-mail:</label>
+            <input type="email" id="editEmail" name="editEmail" required>
+            <button onclick="saveEditedUser()">Salvar Alterações</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
