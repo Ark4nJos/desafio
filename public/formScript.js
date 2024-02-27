@@ -4,7 +4,7 @@ async function createUser() {
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
 
-        const nameRegex = /^[a-zA-Z]+(?: [a-zA-Z]+){1,4}$/;
+        const nameRegex = /^[a-zA-ZÀ-ÖØ-öø-ÿ]+(?: [a-zA-ZÀ-ÖØ-öø-ÿ]+){1,4}$/;
         if (!nameRegex.test(name)) {
             alert('Por favor, insira um nome completo válido (nome e sobrenome).');
             return;
